@@ -1,6 +1,8 @@
 package com.example.recipies;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RequestQueue requestQueue;
     private List<Item> items;
+    private Button addbut;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         requestQueue = VolleySingleton.getInstance(this).getRequestQueue();
         items = new ArrayList<>();
         fetchData();
+        addbut = findViewById(R.id.add);
+        addbut.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AddRecipe.class);
+            startActivity(intent);
+        });
     }
     private void fetchData() {
         String url="https://api.spoonacular.com/food/search?apiKey=99cf38df9cef439fa966bf01710ba698";
