@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1084517979714",
+    "project_id": "recipies-a0ea5",
+    "storage_bucket": "recipies-a0ea5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084517979714:android:0c79c202f196d91a37bfdb",
+        "android_client_info": {
+          "package_name": "com.example.recipies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp4Jsyci0HU4Kbhpj3nJIIey-CCa1cQes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
