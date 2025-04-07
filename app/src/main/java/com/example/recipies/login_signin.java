@@ -21,8 +21,6 @@ public class login_signin extends AppCompatActivity {
 
         tvLogin = findViewById(R.id.tvLogin);
         tvRegister = findViewById(R.id.tvRegister);
-
-        // Show the LoginFragment by default
         switchToFragment(new login());
 
         tvLogin.setOnClickListener(new View.OnClickListener() {
